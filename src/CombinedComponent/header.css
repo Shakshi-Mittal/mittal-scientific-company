@@ -1,0 +1,113 @@
+/* navigation.css */
+.nav-design {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #6096B4; /* Custom shade of green */
+  z-index: 50;
+  padding: 8px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 2px solid #ddd; /* Adjust as needed */
+  border-radius: 999px; /* Adjust as needed */
+  background-color: white;
+}
+
+.logo-container {
+  margin-left: 16px; /* Adjust as needed */
+  margin-top: 4px; /* Adjust as needed */
+  width: 25%; /* Adjust as needed */
+  position: relative;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin-right: 8px; /* Adjust as needed */
+  font-size: 5; /* Adjust as needed */
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to bottom, #93BFCF, rgb(2 132 199));
+  padding: 7px 16px;
+  border-radius: 35px; /* Adjust as needed */
+}
+
+.btn.active {
+  color: #0073e6; /* Adjust as needed */
+}
+
+.logo {
+  margin-left: 32px; /* Adjust as needed */
+  margin-top: 4px; /* Adjust as needed */
+}
+
+.logoImg {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px;
+}
+
+.btn:hover {
+  background-color: #005aa1; /* Adjust as needed */
+}
+
+
+
+/* Additional Styles */
+body {
+  @apply font-sans; /* Use custom font stack */
+}
+
+/* Color Suggestions */
+.bg-custom-blue {
+  background-color: #6096B4; /* Custom shade of green */
+}
+
+.text-white {
+  color: #fff; /* White text color */
+}
+
+.footer-container {
+  @apply bg-custom-blue p-4; /* Background color and padding for the footer */
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 10px;
+  }
+  
+  .logo-container {
+    text-align: center;
+    width: 100%;
+    
+  }
+
+  .logoImg {
+    max-width: 70%;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically for smaller screens */
+    align-items: center; /* Center buttons horizontally for smaller screens */
+  }
+
+  .btn {
+    margin: 8px 0; /* Adjust margin for buttons on smaller screens */
+    width: 100%; /* Set full width for buttons on smaller screens */
+    margin-right: 100px;
+    align-items: center;
+    text-align: center;
+  }
+}

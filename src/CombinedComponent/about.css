@@ -1,0 +1,59 @@
+/* about.css */
+
+/* Make sure this is before Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Styles for the outer design div */
+.about-design {
+  height: 150px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6096B4; /* Dark background color */
+  color: #fff; /* Light text color */
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Styles for the inner detail div */
+.about-detail {
+  background-color: #6096B4; /* Slightly darker background color */
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  padding: 10px 40px;
+}
+
+/* Styles for the paragraph text */
+.about-detail p {
+  color: #fff; /* Example color, change as needed */
+  font-size: 30px; /* Example font size, change as needed */
+}
+
+/* Container for the about section */
+#about {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .about-design {
+    padding: 1px; /* Adjust padding for better spacing on mobile */
+  }
+
+  .about-detail {
+    padding: 10px; /* Adjust padding for better spacing on mobile */
+  }
+
+  #about {
+    margin-bottom: 2px;
+  }
+}

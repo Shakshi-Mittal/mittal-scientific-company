@@ -1,0 +1,56 @@
+/* ProductList.css */
+
+.btn.go-home-btn {
+  display: block;
+    margin-top: 10px auto;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 80%;
+  }
+
+  .btn.go-home-btn:hover {
+    background-color: #0073e6; 
+  }
+  /* ProductList.css */
+
+/* Add a new class for the link text */
+.product-link {
+  display: inline-block;
+  
+  background-color: rgb(14, 165, 233); /* Change to your preferred background color */
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  padding: 7.4px;
+  text-align: center;
+}
+
+.product-link:hover {
+  background-color: #38A89D; /* Change to your preferred hover background color */
+}
+
+.link-text {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.box{
+  box-shadow: rgba(0, 2px, 4px, 0.1);
+}
+/* Rest of your existing styles */
+@media (max-width: 768px) {
+  .box {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the box shadow for smaller screens */
+  }
+}

@@ -1,0 +1,50 @@
+/* home.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer components {
+   .left {
+     @apply absolute left-4 top-1/2 text-2xl text-blue-500 cursor-pointer transform -translate-y-1/2;
+   }
+ 
+   .right {
+     @apply absolute right-4 top-1/2 text-3xl text-blue-500 cursor-pointer transform -translate-y-1/2;
+   }
+ 
+   .currentSlide {
+     @apply transition-opacity duration-500 ease-in opacity-0;
+   }
+ 
+   .currentSlide.active {
+      @apply opacity-100 transform scale-125 transition-opacity duration-500 ease-in-out;
+    }
+    
+    h2 {
+      @apply text-center text-3xl font-bold mb-4;
+    }
+ }
+ .image-slider {
+  margin-top: 200px;
+  position: relative;
+  height: 80vh; /* Adjust the height as needed */
+  width: 100vw; /* Make the slider take the entire width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+ 
+ .image {
+   width: 100%;
+   height: 100%;
+   border-radius: 12px;
+ }
+ 
+ #home-section {
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  height: 85vh;
+  max-width: 100%;
+ }
